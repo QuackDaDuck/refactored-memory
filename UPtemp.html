@@ -88,7 +88,11 @@
             <button id="ReUpload">Change File</button>
         </div>
         
-        <iframe id=MainPage srcdoc=`QuAckDaDUcK`, title="Embedded HTML Content"></iframe>
+        <iframe id=MainPage title="Embedded HTML Content"></iframe>
+
+        <script>
+            document.getElementById("MainPage").srcdoc = InitData;
+        </script>
         
         <script>
             document.getElementById("ReUpload").addEventListener("click", ReUpload);
