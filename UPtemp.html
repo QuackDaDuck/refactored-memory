@@ -89,10 +89,6 @@
         </div>
         
         <iframe id=MainPage title="Embedded HTML Content"></iframe>
-
-        <script>
-            document.getElementById("MainPage").srcdoc = String.raw"QuAckDaDUcK";
-        </script>
         
         <script>
             document.getElementById("ReUpload").addEventListener("click", ReUpload);
@@ -109,6 +105,9 @@
                 
                 document.getElementById("MainPage").srcdoc = data;
             }
+
+
+            document.getElementById("MainPage").srcdoc = String.raw`QuAckDaDUCK`;
         </script>
     </body>
 </html>
